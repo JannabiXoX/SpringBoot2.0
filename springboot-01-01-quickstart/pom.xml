@@ -11,8 +11,7 @@
     <groupId>com.lfy</groupId>
     <artifactId>springboot-01-01-quickstart</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-01-01-quickstart</name>
-    <description>springboot-01-01-quickstart</description>
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
