@@ -1,4 +1,4 @@
-package com.lfy.dao;
+package com.lfy.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -9,16 +9,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @SpringBootTest
-public class BookDaoTestTask {
+public class BookServiceTestTask {
     @Autowired
-    private BookDao bookDao;
+    private IBookService bookService;
     @Test
-    void testgetById(){
-        System.out.println(bookDao.selectById(1));
+    void testGetById(){
+        System.out.println(bookService.getById(1));
     }
     @Test
     void testSave(){
@@ -26,7 +23,7 @@ public class BookDaoTestTask {
         book.setName("测试数据");
         book.setDescription("测试数据");
         book.setType("测试数据");
-        bookDao.insert(book);
+        bookService.saveBook(book);
     }
     @Test
     void testUpdate(){
@@ -35,43 +32,25 @@ public class BookDaoTestTask {
         book.setName("测试数据Update");
         book.setDescription("测试数据Update");
         book.setType("测试数据Update");
-        bookDao.updateById(book);
+        bookService.updateById(book);
     }
     @Test
     void testDelete(){
-        bookDao.deleteById(22);
+        bookService.removeById(22);
     }
     @Test
     void testGetAll(){
-        bookDao.selectList(null);
+        bookService.list();
     }
     @Test
     void testGetPage(){
-        IPage page = new Page(2,5);
-        bookDao.selectPage(page,null);
+//        IPage page = bookService.getPage(2,5);
+        IPage<Book> page = new Page<Book>(2,5);
+        IPage<Book> page1 = bookService.page(page);
         System.out.println(page.getCurrent());
         System.out.println(page.getSize());
         System.out.println(page.getTotal());
         System.out.println(page.getPages());
         System.out.println(page.getRecords());
     }
-    //条件查询
-    @Test
-    void testGetBy(){
-        QueryWrapper<Book> queryWrapper = new QueryWrapper<>();
-        queryWrapper.like("name","C++");
-        bookDao.selectList(queryWrapper);
-    }
-
-    @Test
-    void testGetByLambda(){
-        String name = null;
-        LambdaQueryWrapper<Book> lambdaQueryWrapper = new LambdaQueryWrapper<>();
-//        if (name != null){
-//            queryWrapper.like(Book::getName,name);
-//        }
-        lambdaQueryWrapper.like(name != null,Book::getName,name);
-        bookDao.selectList(lambdaQueryWrapper);
-    }
 }
-
