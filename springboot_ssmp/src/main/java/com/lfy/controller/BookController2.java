@@ -8,6 +8,7 @@ import com.lfy.service.IBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -22,9 +23,11 @@ public class BookController2 {
     }
 
     @PostMapping
-    public R save(@RequestBody Book book){
+    public R save(@RequestBody Book book) throws IOException {
+        if(book.getName().equals("123")) throw new IOException();
+        boolean flag =  iBookService.save(book);
+        return new R(flag,flag ? "添加成功！" : "添加失败");
 
-        return new R(iBookService.save(book));
     }
 
     @PutMapping
@@ -45,8 +48,20 @@ public class BookController2 {
         return new R(true,iBookService.getById(id));
     }
 
-    @GetMapping("{currentPage}/{pageSize}")
-    public R getPage(@PathVariable int currentPage,@PathVariable int pageSize){
-        return new R(true,iBookService.getPage(currentPage,pageSize));
+//    @GetMapping("{currentPage}/{pageSize}")
+//    public R getPage(@PathVariable int currentPage,@PathVariable int pageSize){
+//        IPage<Book> page = iBookService.getPage(currentPage,pageSize);
+//        if (currentPage > page.getPages()){
+//            page = iBookService.getPage((int)page.getPages(),pageSize);
+//        }
+//        return new R(true,page);
+//    }
+@GetMapping("{currentPage}/{pageSize}")
+public R getPage(@PathVariable int currentPage,@PathVariable int pageSize,Book book){
+    IPage<Book> page = iBookService.getPage(currentPage,pageSize,book);
+    if (currentPage > page.getPages()){
+        page = iBookService.getPage((int)page.getPages(),pageSize,book);
     }
+    return new R(true,page);
+}
 }

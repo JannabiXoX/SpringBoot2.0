@@ -36,7 +36,7 @@ public class BookServiceTestTask {
     }
     @Test
     void testDelete(){
-        bookService.removeById(22);
+        bookService.removeById(21);
     }
     @Test
     void testGetAll(){

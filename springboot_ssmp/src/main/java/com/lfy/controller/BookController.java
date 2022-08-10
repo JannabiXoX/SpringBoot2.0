@@ -41,6 +41,6 @@ public class BookController {
 
     @GetMapping("{currentPage}/{pageSize}")
     public IPage<Book> getPage(@PathVariable int currentPage,@PathVariable int pageSize){
-        return iBookService.getPage(currentPage,pageSize);
+        return iBookService.getPage(currentPage,pageSize, null);
     }
 }
