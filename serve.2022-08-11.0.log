@@ -1,0 +1,28 @@
+2022-08-11 16:35:09.230  INFO 49544 --- [main] com.lfy.Application                      : Starting Application using Java 1.8.0_191 on LAPTOP-A81BVOEU with PID 49544 (E:\SpringBoot学习之路\SpringBoot2.0\springboot_log\target\classes started by user in E:\SpringBoot学习之路\SpringBoot2.0)
+2022-08-11 16:35:09.242  INFO 49544 --- [main] com.lfy.Application                      : No active profile set, falling back to 1 default profile: "default"
+2022-08-11 16:35:11.143  INFO 49544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 81 (http)
+2022-08-11 16:35:11.159  INFO 49544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-11 16:35:11.160  INFO 49544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-11 16:35:11.541  INFO 49544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-11 16:35:11.541  INFO 49544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2194 ms
+2022-08-11 16:35:12.065  INFO 49544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 81 (http) with context path ''
+2022-08-11 16:35:12.080  INFO 49544 --- [main] com.lfy.Application                      : Started Application in 3.92 seconds (JVM running for 6.396)
+2022-08-11 16:36:02.739  INFO 37496 --- [main] com.lfy.Application                      : Starting Application using Java 1.8.0_191 on LAPTOP-A81BVOEU with PID 37496 (E:\SpringBoot学习之路\SpringBoot2.0\springboot_log\target\classes started by user in E:\SpringBoot学习之路\SpringBoot2.0)
+2022-08-11 16:36:02.745  INFO 37496 --- [main] com.lfy.Application                      : No active profile set, falling back to 1 default profile: "default"
+2022-08-11 16:36:04.099  INFO 37496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 81 (http)
+2022-08-11 16:36:04.112  INFO 37496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-11 16:36:04.112  INFO 37496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-11 16:36:04.437  INFO 37496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-11 16:36:04.438  INFO 37496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1599 ms
+2022-08-11 16:36:04.931  INFO 37496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 81 (http) with context path ''
+2022-08-11 16:36:04.947  INFO 37496 --- [main] com.lfy.Application                      : Started Application in 3.108 seconds (JVM running for 5.242)
+2022-08-11 16:36:17.373  INFO 37496 --- [http-nio-81-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-11 16:36:17.373  INFO 37496 --- [http-nio-81-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-11 16:36:17.374  INFO 37496 --- [http-nio-81-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-11 16:36:17.413  INFO 37496 --- [http-nio-81-exec-2] com.lfy.controller.BookController        : info...
+2022-08-11 16:36:17.413  WARN 37496 --- [http-nio-81-exec-2] com.lfy.controller.BookController        : warn...
+2022-08-11 16:36:17.413 ERROR 37496 --- [http-nio-81-exec-2] com.lfy.controller.BookController        : error...
+2022-08-11 16:36:17.655  INFO 37496 --- [http-nio-81-exec-1] com.lfy.controller.BookController        : info...
+2022-08-11 16:36:17.655  WARN 37496 --- [http-nio-81-exec-1] com.lfy.controller.BookController        : warn...
+2022-08-11 16:36:17.655 ERROR 37496 --- [http-nio-81-exec-1] com.lfy.controller.BookController        : error...
+2022-08-11 16:36:17.789  INFO 37496 --- [http-nio-81-exec-3] com.lfy.controller.BookController        : info...

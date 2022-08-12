@@ -1,0 +1,20 @@
+server:
+  port: 81
+#debug: true
+#???????
+logging:
+  level:
+    root: info
+    # ??????????
+#    com.lfy.contriller: debug
+    ebank: warn
+
+  pattern:
+#    console: "%d - %m %n"
+     console: "%d %clr(%5p) --- [%16t] %clr(%-40.40c){cyan} : %m %n"
+  file:
+    name: serve.log
+  logback:
+    rollingpolicy:
+      max-file-size: 4KB
+      file-name-pattern: serve.%d{yyyy-MM-dd}.%i.log
