@@ -3,13 +3,11 @@ package com.lfy.controller;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.lfy.controller.util.R;
 import com.lfy.domain.Book;
-import com.lfy.service.BookService;
 import com.lfy.service.IBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-import java.util.List;
 
 @RestController
 @RequestMapping("/books")
@@ -32,8 +30,8 @@ public class BookController2 {
 
     @PutMapping
     public R update(@RequestBody Book book){
-
-        return new R(iBookService.updateById(book));
+        boolean flag =  iBookService.updateById(book);
+        return new R(flag,flag ? "修改成功！" : "修改失败");
     }
 
     @DeleteMapping("{id}")

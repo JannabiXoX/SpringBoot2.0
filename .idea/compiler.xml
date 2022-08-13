@@ -13,15 +13,17 @@
         <module name="springboot_ssmp" />
         <module name="springboot-01-03-quickstart" />
         <module name="springboot_config" />
+        <module name="springboot_hot_deploy" />
         <module name="springboot-01-04-quickstart" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="springboot-01-01-quickstart" target="1.8" />
       <module name="springboot-01-02-quickstart" target="1.8" />
       <module name="springboot-01-03-quickstart" target="1.8" />
       <module name="springboot-01-04-quickstart" target="8" />
       <module name="springboot_config" target="1.8" />
+      <module name="springboot_hot_deploy" target="1.8" />
       <module name="springboot_log" target="1.8" />
       <module name="springboot_ssmp" target="1.8" />
     </bytecodeTargetLevel>
@@ -32,6 +34,7 @@
       <module name="springboot-01-02-quickstart" options="-parameters" />
       <module name="springboot-01-04-quickstart" options="-parameters" />
       <module name="springboot_config" options="-parameters" />
+      <module name="springboot_hot_deploy" options="-parameters" />
       <module name="springboot_log" options="-parameters" />
       <module name="springboot_ssmp" options="-parameters" />
     </option>

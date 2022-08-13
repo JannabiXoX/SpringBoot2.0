@@ -1,11 +1,11 @@
 server:
   port: 81
 #debug: true
-#???????
+#日志配置
 logging:
   level:
     root: info
-    # ??????????
+    # 指定类的打印
 #    com.lfy.contriller: debug
     ebank: warn
 
