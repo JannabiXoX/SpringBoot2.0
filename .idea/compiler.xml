@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot_log" />
         <module name="springboot-01-02-quickstart" />
+        <module name="springboot_configuration" />
         <module name="springboot-01-01-quickstart" />
         <module name="springboot_ssmp" />
         <module name="springboot-01-03-quickstart" />
@@ -23,6 +24,7 @@
       <module name="springboot-01-03-quickstart" target="1.8" />
       <module name="springboot-01-04-quickstart" target="8" />
       <module name="springboot_config" target="1.8" />
+      <module name="springboot_configuration" target="1.8" />
       <module name="springboot_hot_deploy" target="1.8" />
       <module name="springboot_log" target="1.8" />
       <module name="springboot_ssmp" target="1.8" />
@@ -34,6 +36,7 @@
       <module name="springboot-01-02-quickstart" options="-parameters" />
       <module name="springboot-01-04-quickstart" options="-parameters" />
       <module name="springboot_config" options="-parameters" />
+      <module name="springboot_configuration" options="-parameters" />
       <module name="springboot_hot_deploy" options="-parameters" />
       <module name="springboot_log" options="-parameters" />
       <module name="springboot_ssmp" options="-parameters" />
