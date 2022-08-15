@@ -22,9 +22,10 @@ import java.time.temporal.ChronoUnit;
 public class ServerConfig {
     private String ipAddress;
     @Max(value = 8888,message = "最大值不能超过8888")
-    @Min(value = 100,message = "最小值不能低于100")
+//    @Min(value = 100,message = "最小值不能低于100")
     private int port;
     private long timeout;
+
 
     @DurationUnit(ChronoUnit.HOURS)
     private Duration serverTimeOut;

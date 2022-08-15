@@ -5,10 +5,11 @@ servers:
 #  ip-address: 192.168.0.1  #?????
 #  IPADDRESS: 192.168.0.1
 #  ipAddress: 192.168.0.1
-  port: 9999
+  port: 8080
   timeout: -1
   serverTimeOut: 3
   dataSize: 1MB
 
 datasource:
   driverClassName: com.mysql.jdbc.Driver
+  password: "0127"
