@@ -1,7 +1,14 @@
 servers:
-  ipAdress: 192.168.0.1
-  port: 2345
+  ipAddress: 192.168.0.1   #??
+#  ipadress: 192.168.0.1
+#  ip_address: 192.168.0.1  #unline
+#  ip-address: 192.168.0.1  #?????
+#  IPADDRESS: 192.168.0.1
+#  ipAddress: 192.168.0.1
+  port: 9999
   timeout: -1
+  serverTimeOut: 3
+  dataSize: 1MB
 
 datasource:
-  driverClassName: com.mysql.jdbc.Driver456
+  driverClassName: com.mysql.jdbc.Driver
