@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/springboot_hot_deploy/springboot_hot_deploy.iml" filepath="$PROJECT_DIR$/springboot_hot_deploy/springboot_hot_deploy.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_log/springboot_log.iml" filepath="$PROJECT_DIR$/springboot_log/springboot_log.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_ssmp/springboot_ssmp.iml" filepath="$PROJECT_DIR$/springboot_ssmp/springboot_ssmp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_test/springboot_test.iml" filepath="$PROJECT_DIR$/springboot_test/springboot_test.iml" />
     </modules>
   </component>
 </project>
