@@ -89,7 +89,6 @@ public class WebTest {
         MockHttpServletRequestBuilder builder = MockMvcRequestBuilders.get("/books");
         ResultActions action = mvc.perform(builder);
 
-
         StatusResultMatchers status = MockMvcResultMatchers.status();
         ResultMatcher ok = status.isOk();
         action.andExpect(ok);
