@@ -7,6 +7,7 @@ import lombok.Setter;
 
 //@Getter
 //@Setter
+//注入set get 构造 方法
 @Data
 public class Book {
     private Integer id;
